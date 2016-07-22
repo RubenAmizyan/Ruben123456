@@ -1,0 +1,54 @@
+body
+{
+	background-color:rgb(153,255,255);
+}
+img
+{
+	height:300px;
+}
+#button
+{
+	background-color:orange;
+	border:solid orange 3px;
+	border-radius:30px;
+	color:white;
+	font-size:35px;
+outline:none;
+}
+#first
+{
+	color:white;
+	font-size:30px;
+}
+h1
+{
+	color:white;
+	text-align:center;
+	font-size:45px;
+	
+	
+}
+h2
+{
+	color:white;
+	
+}
+#second
+{
+width:500px;
+	height:50px;
+	font-size:25px;
+}
+#quastionDiv
+{
+	display:inline-block;
+}
+#waitingImage
+{
+	
+	
+}
+
+
+
+

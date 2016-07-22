@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My page</title> 
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" href="css/animate.css">
+
+</head>
+<body>
+<div id="wrapper">
+<form>
+<div id="quastionDiv">
+<img src="image/robot222.jpg">
+<h1 >The smartest robot</h1>
+<label id="first" for="quastion">Your quastion</label>
+<br>
+<input id="second" type="text" placeholder="Ask your quasion" id="quastion">
+</div>
+<div id="showAnswer">
+<h2>The answer is</h2>
+<h3 id="answer"></h3>
+<img src="image/robot4.gif">
+</div>
+<div id="login"> 
+<h2>Login as Administrator</h2>
+<label for="name">Username</label>
+<input type="text" id="name">
+<br>
+<label for="password" >Password</label>
+
+<input id="password" type="password">
+<br>
+<br>
+<input id="button" type="button" onclick="showAnswer()"value="Login and Answer">
+</div>
+</form>
+</div>
+
+<div id="waiting">
+<img src="image/robot5.gif" id="waitingImage">
+<p style="color:white;font-size:40px;display:inline;">Waiting...</p>
+</div>
+
+
+<script src="java.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body >
+
+
+<h1>Hangman Game</h1>
+
+<input style="background-color:rgba(0,255,255,0.5);" type="button" onclick="startGame()" value="Start Game">
+
+<img src="image/hang.jpg" alt="hangman">
+
+
+
+<script>
+function startGame()
+    {var words = ["school", "javascript", "window", "star", "notebook", "flower", "chocolate", "icecream"];
+    /*Bari @ntrutyun@ kareli e anel patahakan skzbunqov
+     ogtagortselov Math.floor(Math.random()*words.length)*/
+    var word = words[4];
+    /*Steghtsenq gushakats ev der chgushakats tareri array*/
+    var answerArray = [];
+
+    for(var i = 0; i< word.length; i++){
+        answerArray[i] = "_";
+    }
+
+    /*Qani tar unenq gushakelu*/
+    var remainingLetters = word.length;
+    var points = 11;
+    /*pahvats bari simvolneri qanakov cuytc enq talis gtser*/
+
+    alert("Can you guess the word I have in mind? \nYour points: " + points + "\n" + answerArray.join(" "));
+
+    /*khagh@ sharunakvum e qani der bar@ chi gushakvel
+     ev khaghatcogh@ der uni miavor*/
+
+    while((remainingLetters!== 0 )&& (points>0))
+    {
+        var letter = prompt("Enter a letter").toLowerCase();
+        /*ete prompt patuhanum seghmen "Cancel" khagh@ kkangni*/
+        if(letter===null){
+            break;
+        }
+        /*ete prompt patuhanum tpen mekitc aveli kam 0 nish*/
+        else if(letter.length!==1){
+            alert("Please enter one letter");
+        }
+        /*ete tpvel e mek nish*/
+        else{
+            /*hertov ancnum enq pahvats bari nisheri vrayov*/
+            for(var j = 0; j<word.length; j++)
+            {
+                /*ete pahvats barum ka tpvats nish@*/
+
+                if((word[j]===letter))
+                {
+                    if(answerArray[j]==="_")
+                    {
+                        answerArray[j] = letter;
+                        remainingLetters--;
+                    }
+
+                }
+            }
+
+            /*ete pahvats bari bolor nisheri vrayov
+             antcnelutc heto khaghatcoghi tpats tar@ chi haytnvel
+             gushakvats tareri array-um, apa khaghatcogh@
+             skhal tar e tpel, hetevabar kortcnum e miavor*/
+
+            if(answerArray.indexOf(letter)===-1){
+                --points;
+
+                alert("You lost a point, your points: " + points);
+            }
+            alert("Your points: " + points  + "\n " + answerArray.join(" "));
+        }
+    }
+    /*ete chgushakvats tarer chen mnatcel, apa khaghatcogh@ haghtel e*/
+    if(remainingLetters===0){
+        alert("CONGRATULATIONS! YOU GUESSED!");
+    }
+    /*Ete miavorner@ 0 en, khaghatcogh@ partvel e*/
+    if(points===0){
+        alert("You lost, game over. \nMy word was: " + word);
+    }
+	}
+</script>
+
+</body>
+</html>

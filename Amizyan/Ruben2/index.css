@@ -1,0 +1,174 @@
+body
+{
+	background-image:url(image/galaxy.gif);
+	text-align:center;
+}
+nav
+{
+	float:laft;
+	z-index:auto;
+	position:fixed;
+	left:0;
+	top:70px;
+	background-color:rgba(52,52,52,0.7);
+	width:300px;
+	height:350px;
+	border-top-right-radius:40px;
+	border-bottom-right-radius:40px;
+	padding:10px;
+
+}
+
+
+
+nav a
+{
+	text-decoration:none;
+	color:#FFFFB8;
+	font-family:Arial;
+	font-size:20px;
+	padding:10px;
+}
+
+nav a:hover
+{
+	color:#B7FA8A;
+}
+h1
+{
+	border-color:#B7FA8A;
+}
+
+
+main
+{
+	background-color:rgba(73,193,202,0.5);
+    border:solid #66FF66 3px;
+	border-radius:30px;
+}
+
+main span
+{
+height:200px;
+width:400px	
+}
+main img{
+	position:relative;
+	left:400px;
+	z-index:5px;
+	height:150px;
+	width:100px;
+	border-top-left-radius:40px;
+	border-bottom-left-radius:40px;
+}
+span 
+{
+	display:inline-block;
+	margin-bottom:20px;
+}
+.movies
+{
+	color:#444;
+}
+
+h2
+{
+	font-family:Forte;
+	
+}
+p
+{
+	font-family:comic sans ms;
+	margin-left:70px;
+	color:white;
+	font-size:35px;
+}
+img
+{
+	float:center;
+	margin:10%;
+	border:3px solid #333;
+	
+}
+#heros 
+{
+    background-color:rgba(73,193,202,0.5);
+    border:solid #66FF66 3px;
+	border-radius:30px;
+
+}
+#button
+{
+	background-color:#FF8000;
+	font-size:30px;
+	color:white;
+	border:solid orange 3px;
+	border-radius:30px;
+	
+}
+
+
+#contryDiv
+{
+	background-color:rgba(73,193,202,0.5);
+    border:solid #66FF66 3px;
+	border-radius:30px;
+
+	
+}
+
+
+#foot 
+{
+	background-image:url("image/vintage.jpg")
+}
+
+#comment
+{
+	background-color:rgba(73,193,202,0.5);
+    border:solid #66FF66 3px;
+	border-radius:30px;
+	padding:150px;
+	width:150px;
+	
+	
+}
+
+.ruben
+
+{
+	width:400px;
+	background-color:rgba(73,193,202,0.5);
+    border:solid #66FF66 3px;
+	border-radius:30px;
+}
+
+
+#second
+{
+	background-color:rgba(73,193,202,0.5);
+    border:solid #66FF66 3px;
+	border-radius:30px;
+}
+
+
+.image
+{
+	width:300px;
+	height:300px;
+}
+.imagebig
+{
+	position:asolute;
+	width:0px;
+	-webkit-transition:with 0.3s linear 0s;
+	transition:width 0.3s linear 0s;z-index:10;
+}
+.image:hover+.imagebig
+{
+	width:200px;
+}
+#aram
+{
+	background-color:rgba(0,255,255,0.5);
+}
